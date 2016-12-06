@@ -31,9 +31,6 @@ end
 if clipboardM then
     modalmgr:bind('alt', 'C', 'Enter Clipboard Mode', function() exit_others(clipboardM) clipboardM:enter() end)
 end
-if downloadM then
-    modalmgr:bind('alt', 'D', 'Enter Download Mode', function() exit_others(downloadM) downloadM:enter() end)
-end
 if caldraw then
     modalmgr:bind('alt', 'E', nil, function() showCalendar() end)
 end
@@ -53,9 +50,6 @@ if cheatsheetM then
     modalmgr:bind('alt', 'S', 'Enter Cheatsheet Mode', function() exit_others(cheatsheetM) cheatsheetM:enter() end)
 end
 modalmgr:bind('alt', 'T', 'Show Digital Clock', function() show_time() end)
-if viewM then
-    modalmgr:bind('alt', 'V', 'Enter View Mode', function() exit_others(viewM) viewM:enter() end)
-end
 modalmgr:bind('alt', 'Z', 'Open Hammerspoon Console', function() hs.toggleConsole() end)
 modalmgr:bind('alt', 'tab', 'Show Windows Hint', function() exit_others(nil) hs.hints.windowHints() end)
 

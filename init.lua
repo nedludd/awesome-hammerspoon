@@ -48,25 +48,6 @@ if privateconf ~= nil then
     require('private/awesomeconfig')
 end
 
--- Toggle files on Desktop hidden
-hs.hotkey.bind({"cmd", "ctrl"}, "H", "Show/Hide Files on Desktop", function()
-    if hadHidden == nil then
-        os.execute("chflags hidden ~/Desktop/*")
-        hadHidden = 1
-        hs.alert.show(" ⚑ Set hidden")
-    else
-        os.execute("chflags nohidden ~/Desktop/*")
-        hadHidden = nil
-        hs.alert.show(" ⚐ Set unhidden")
-    end
-end)
--- In case reboot or hammerspoon relaunch
-hs.hotkey.bind({"cmd", "ctrl", "shift"}, "H", "Force Show Files on Desktop ", function()
-    os.execute("chflags nohidden ~/Desktop/*")
-    hadHidden = nil
-    hs.alert.show(" ⚐ Set unhidden")
-end)
-
 hs.hotkey.bind({"cmd", "shift", "ctrl"}, "Z", "Show Hammerspoon Console", function() hs.toggleConsole() end)
 
 hs.hotkey.bind({"cmd", "ctrl", "shift"}, "L", function()

@@ -122,14 +122,6 @@ Below is what happened when I press <kbd>⌘</kbd> + <kbd>C</kbd> to copy `Hamme
 
 ![clipshow](./screenshots/clipshow.png)
 
-### Aria2 frontend(download mode)
-
-I use [glutton](https://github.com/NemoAlex/glutton)(a tiny webclient for aria2) to manage aria2's download queue. This mode creates an interface for glutton, so I can handle aria2 more convenient.
-
-![glutton](./screenshots/glutton.png)
-
-*To speed up the display of webclient, by default when you press `⎋` the interface is hiden(instead destroyed). This may increase resource occupation. If you don't use `download` mode for a long time, when quitting use <kbd>⌃</kbd> + <kbd>⎋</kbd> to completely destory the webclient.*
-
 ### Cheatsheet(cheatsheet mode)
 
 It shows the cheatsheet of current application's hotkeys. Code comes from [here](https://github.com/dharmapoudel/hammerspoon-config).
@@ -159,12 +151,6 @@ Use <kbd>H/J/K/L</kbd> to scroll around.
 Use <kbd>⌃</kbd>/<kbd>⇧</kbd> + <kbd>H/J/K/L</kbd> to move mouse around.
 
 Use <kbd>,</kbd>/<kbd>.</kbd> for mouse left/right click.
-
-- **Hide Desktop** <kbd>⌘</kbd> + <kbd>⌃</kbd> + <kbd>H</kbd>
-
-Hide your desktop files temporarily to avoid embarrass on some occasion.
-
-Use <kbd>⌘</kbd> + <kbd>⌃</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd> to force show all hiden files.
 
 - **Lock Screen** <kbd>⌘</kbd> + <kbd>⌃</kbd> + <kbd>⇧</kbd> + <kbd>L</kbd>
 
