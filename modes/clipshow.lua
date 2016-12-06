@@ -40,9 +40,9 @@ function clipshow()
                 textshow = hs.drawing.text(textframe,textdata)
                 textshow:setLevel(hs.drawing.windowLevels.modalPanel)
                 if string.len(textdata) < 180 then
-                    textshow:setTextSize(80.0)
-                else
                     textshow:setTextSize(50.0)
+                else
+                    textshow:setTextSize(20.0)
                 end
                 textshow:show()
                 clipDrawn = true
